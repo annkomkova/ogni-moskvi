@@ -1,0 +1,19 @@
+/* _________________________index___________________ */
+#events {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+.event {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+.event h3 {
+  margin-bottom: 2vw;
+}
+.day-time,
+.day-description span {
+  color: #111;
+}

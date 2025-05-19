@@ -1,0 +1,94 @@
+@media screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+  }
+  nav + * {
+    margin-top: 90px;
+  }
+  #burger {
+    display: block;
+    border: none;
+    width: 40px;
+    height: 26px;
+    position: relative;
+    margin: 16px;
+    cursor: pointer;
+  }
+  #burger::after,
+  #burger::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #111;
+    transition: all ease 0.3s;
+  }
+  #burger::before {
+    top: 0;
+    box-shadow: 0 25px 0 #111;
+  }
+  #burger.active::before {
+    transform: rotate(45deg);
+    top: 10px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: transform ease 0.3s, box-shadow 0.1s, top ease 0.3s;
+  }
+  #burger.active::after {
+    transform: rotate(-45deg);
+    top: 10px;
+    transition: all ease 0.3s;
+  }
+
+  #burger.active + .main-menu {
+    transform: translateX(0);
+    transition: transform ease 0.6s;
+  }
+
+  .main-menu {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 20px;
+    position: absolute;
+    background-color: #eee;
+    transform: translateX(-100%);
+    transition: transform ease 0.3s;
+    border-right: 1px solid #888;
+  }
+  .main-menu a {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .main-menu a::before {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-image: url('https://img.icons8.com/ios/50/right--v1.png');
+    background-size: contain;
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    transition: all ease 0.4s;
+  }
+  .main-menu a:hover::before {
+    opacity: 1;
+    right: 20px;
+  }
+}

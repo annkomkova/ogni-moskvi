@@ -1,0 +1,28 @@
+/* _________________________about___________________ */
+
+#cover p {
+  max-width: 70%;
+  margin: 16px 0;
+}
+#partners a {
+  text-decoration: none;
+  transition: transform ease-in 0.2s;
+}
+#partners a:hover {
+  transform: scale(0.95);
+  transition: transform ease-in 0.4s;
+}
+#partners a:hover p {
+  color: #111;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+.card .arrow-right {
+  width: 15px;
+  height: 30px;
+  background-image: url('../images/arrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}

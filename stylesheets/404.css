@@ -1,0 +1,61 @@
+.wrapper {
+  max-width: 1024px;
+  margin: 20% auto;
+  display: flex;
+  justify-content: space-between;
+}
+h1.error {
+  color: #ccc;
+  font-size: 220px;
+  margin: 0;
+  line-height: 220px;
+}
+h2.error {
+  margin-top: -80px;
+}
+#text p,
+#text a {
+  font-size: 18px;
+}
+#text a:hover,
+.back:hover {
+  color: #111;
+  cursor: pointer;
+}
+#image img {
+  border-radius: 30px;
+  width: 125px;
+}
+#image a {
+  font-weight: 500;
+  font-size: 21px;
+}
+#image {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 8vw;
+}
+.object {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+  section {
+    margin: 10px;
+  }
+  h1.error {
+    font-size: 190px;
+    line-height: 190px;
+  }
+  h2.error {
+    font-size: 34px;
+    margin-top: -60px;
+  }
+}
