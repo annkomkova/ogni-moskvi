@@ -1,0 +1,30 @@
+#cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-item-image {
+  width: 10%;
+}
+.cart-item button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  position: relative;
+  right: 0;
+}
+.cart-item h3 {
+  font-size: 44px;
+  line-height: 44px;
+}
+.cart-item p,
+.cart-item h4 {
+  font-size: 26px;
+  line-height: 30px;
+}
